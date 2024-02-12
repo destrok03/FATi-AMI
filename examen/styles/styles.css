@@ -1,0 +1,213 @@
+
+/* en tete */
+.container {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 150px;
+    margin-bottom: 30px;
+
+}
+
+header img {
+    width: 300px;
+}
+/* corps de page*/
+nav.lien ul  {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    top: 200px;
+    position: absolute;
+    width: 100%;
+
+}
+
+nav.lien ul li {
+    margin: 0 20 px;
+    min-width: 100px;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    
+    
+
+}
+
+
+nav ul li a {
+
+    text-decoration: none;
+    font-size:  28px;
+
+    color: black;
+    
+}
+.images img {
+    
+    width: 100%;
+    height: 1000px;
+}
+.mot{
+    text-align: center;
+    margin-bottom: 4px;
+    display: flex;
+}
+.mot h4, h5{
+	font-size: 25px;
+}
+.un p{
+	padding-right: 10px;
+}
+.un{
+	margin-top: 20px;
+	padding: 0px;
+	border-radius: 0 20px 20px 0;
+	height: 1025px;
+    max-width: 100%;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 50px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+           
+}
+.deux{
+	margin-top: 20px;
+	padding: 20px;
+	background-color:transparent;
+	border-radius: 0 20px 20px 0;
+	height: 500px;
+    margin-left: 150px;
+}
+.bouton{
+	background-color:gray;
+	color: white;
+	padding: 10px 15px;
+	font-size: 14px;
+	border-radius: 5px;
+	margin: 30px 5px;
+	cursor: pointer;
+    }
+    /*partie formulaire reservation table */
+.container2 {
+    width: 300px;
+   
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 50px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-left: -150px;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+form {
+    display: grid;
+    gap: 20px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.imgContain{    
+display : flex ;
+justify-content : space-around ;
+flex-wrap : wrap ;
+text-align: center;
+}
+.imgContain >img{
+height : 85px ;
+width: auto;
+border-radius: 5%;
+margin-bottom : 10px ;
+margin-left: 25px;
+}
+
+
+/*footer*/  
+footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            margin-top: 100px;
+            bottom: 0;
+            max-width: 100%;
+            border-radius: 5px;
+        }
+
+        #footer-content {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .social-icons a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 20px;
+            margin: 0 10px;
+        }
+
+@media screen and (max-width: 900px){
+	.lien{ display: block }
+    nav ul{
+        opacity: 0;
+        flex-direction: column;
+        width: 250px;
+        padding: 0;
+        top: 225px;
+        left: calc(50% - 125px);
+    }
+
+}
+/*  pour le responsive NAV ET IMAGE*/
+@media screen and (min-width: 960px) {
+    nav ul li{
+        float: left;
+        list-style: none;
+        padding: 10px;
+    }
+    img#img_profil{
+        float: right;
+        width: 30%;
+        height: auto;
+    }
+    /*On ajoute une barre verticale entre les éléments du menu*/
+    nav::after {
+        content:"";
+        clear: both;
+        display: block;
+    }
+}
+
+
+ 

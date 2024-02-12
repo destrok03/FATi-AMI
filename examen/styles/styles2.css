@@ -1,0 +1,225 @@
+/* en tete */
+.container {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 150px;
+    margin-bottom: 30px;
+
+}
+
+header img {
+    width: 300px;
+}
+/* corps de page*/
+nav.lien ul  {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    top: 200px;
+    position: absolute;
+    width: 100%;
+
+}
+
+nav.lien ul li {
+    margin: 0 20 px;
+    min-width: 100px;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    
+    
+
+}
+
+
+nav ul li a {
+
+    text-decoration: none;
+    font-size:  28px;
+
+    color: black;
+    
+}
+.images img {
+    
+    width: 100%;
+    height: 1000px;
+}
+
+
+
+div.img {
+	margin: 5px;
+	border: 1px solid #ccc;
+	float: left;
+	width: 180px;
+  }
+  
+  div.img:hover {
+	border: 1px solid #777;
+  }
+  
+  div.img img {
+	width: 100%;
+	height: auto;
+  }
+  
+  div.desc {
+	padding: 15px;
+	text-align: center;
+  }
+ 
+
+
+/*partie code temoin */
+.temoin-section {
+	max-width: 100%;
+	margin-left: 30px;
+	background-color: #fff;
+	padding: 2px;
+	border-radius: 8px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+h2 {
+	text-align: center;
+	color: #333;
+	font-weight: bold;
+	font-family: Arial, sans-serif;
+	letter-spacing: 2px;
+	line-height: 1.7;
+}
+
+.temoin {
+	flex: 1;
+	text-align: center;
+	border: 1px solid #ccc;
+	border-radius: 8px;
+	margin: 10px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.temoin img {
+   max-width: 50px;
+	height: 80px;
+	border-radius: 50%;
+	object-fit: cover;
+	margin-top: 10px;
+	
+}
+
+.temoin p {
+	font-style: italic;
+	color: #555;
+	
+}
+
+.temoin-author {
+	font-weight: bold;
+	margin-top: 1px;
+}
+/*partie soulignement  du titre temoignage*/
+#hr{
+width: 15%;
+margin-top: -20px;
+margin-bottom: 20px;
+height: 2px;
+background-color: red;
+border: none;
+border-radius: 2px;
+}
+/*footer*/  
+footer {
+	background-color: #333;
+	color: #fff;
+	text-align: center;
+	padding: 20px;
+	margin-top: 100px;
+	bottom: 0;
+	max-width: 100%;
+	border-radius: 5px;
+}
+
+.footer-content {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.social-icons a {
+	color: #fff;
+	text-decoration: none;
+	font-size: 20px;
+	margin: 0 10px;
+}
+/*footer*/  
+footer {
+	background-color: #333;
+	color: #fff;
+	text-align: center;
+	padding: 20px;
+	margin-top: 100px;
+	bottom: 0;
+	max-width: 100%;
+	border-radius: 5px;
+}
+
+.footer-content {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.social-icons a {
+	color: #fff;
+	text-decoration: none;
+	font-size: 20px;
+	margin: 0 10px;
+}
+/*  pour le responsive NAV ET IMAGE*/
+@media screen and (min-width: 960px) {
+    nav ul li{
+        float: left;
+        list-style: none;
+        padding: 10px;
+    }
+    img#img_profil{
+        float: right;
+        width: 30%;
+        height: auto;
+    }
+    /*On ajoute une barre verticale entre les éléments du menu*/
+    nav::after {
+        content:"";
+        clear: both;
+        display: block;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
